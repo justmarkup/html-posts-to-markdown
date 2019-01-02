@@ -1,0 +1,22 @@
+{
+    "name": "html-posts-to-markdown",
+    "version": "0.0.1",
+    "description": "Save your online html posts as markdown using puppeteer",
+    "main": "index.js",
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "keywords": [
+        "html",
+        "markdown",
+        "extract",
+        "puppeteer"
+    ],
+    "author": "Michael Scharnagl @justmarkup",
+    "license": "MIT",
+    "dependencies": {
+        "puppeteer": "^1.11.0",
+        "turndown": "^5.0.1",
+        "yargs": "^12.0.5"
+    }
+}
