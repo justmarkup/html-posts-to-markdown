@@ -3,6 +3,10 @@
 A node.js tool to extract html posts from webpages using [puppeteer
 ](https://github.com/GoogleChrome/puppeteer), extract them to markdown and save them.
 
+## Disclaimer
+
+I haven't really tested this and there are many things missing, but it works for my use case.
+
 ## Setup
 
 1) Clone the repository
