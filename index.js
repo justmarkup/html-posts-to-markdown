@@ -43,9 +43,14 @@ const postsDirectory = args.dir ? __dirname + args.dir : __dirname + '/posts/';
 
         // get the pathname
         let pagePathname = await page.evaluate(() => location.pathname);
-        pagePathname = pagePathname.substr(5);
+        // this replaces all / with -
         pagePathname = pagePathname.replace(/\//g, "-");
-        pagePathname = pagePathname.slice(0, -1);
+
+        // my pathname starts with /log/ so I remove this and also remove the last -
+        // pagePathname = pagePathname.substr(5);
+        // pagePathname = pagePathname.slice(0, -1);
+
+
 
         // get the title of the post
         await page.waitForSelector(titleSelector);
